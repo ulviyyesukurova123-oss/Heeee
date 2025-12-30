@@ -1,0 +1,54 @@
+index.html
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Lora’nın Sehrli Dünyası ✨</title>
+  <style>
+    body {
+      background: linear-gradient(to right, #ff69b4, #800080);
+      color: white;
+      text-align: center;
+      font-family: 'Comic Sans MS', sans-serif;
+      margin-top: 80px;
+      transition: background 0.5s;
+    }
+
+    button {
+      font-size: 22px;
+      padding: 15px 30px;
+      border-radius: 25px;
+      border: none;
+      background-color: black;
+      color: white;
+      cursor: pointer;
+      transition: transform 0.2s;
+    }
+
+    button:hover {
+      transform: scale(1.1);
+      background-color: #ff1493;
+    }
+  </style>
+</head>
+<body>
+
+<h1 id="yazi">Salam Dünya 😌</h1>
+<p>Bas düyməni və sehri gör 👇</p>
+
+<button onclick="magic()">Bas Mənə 😏</button>
+
+<script>
+  const colors = ["#ff69b4","#800080","#ff4500","#00ffff","#00ff00","#ffff00","#ff00ff"];
+
+  function magic() {
+    const text = document.getElementById("yazi");
+    text.innerHTML = "LORA = GƏLƏCƏYİN AI QUEEN 👑🤖";
+
+    // fon rəngini dəyişək
+    const randomColor = colors[Math.floor(Math.random() * colors.length)];
+    document.body.style.background = randomColor;
+  }
+</script>
+
+</body>
+</html>
